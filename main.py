@@ -76,27 +76,21 @@ def solo_pares(lista_numeros):
             numeros_pares.append(numero)
     return numeros_pares
 
-# Función
-
+# Funcion que determine si una cadena dada es un palíndromo
 def es_palindromo(cadena):
-    # Eliminamos espacios en blanco y convertimos a minúsculas
     cadena = cadena.replace(" ", "").lower()
-    
-    # Comparamos la cadena original con su reverso
     return cadena == cadena[::-1]
 
-# Funcion
+# Función que tome una lista de números y calcule el producto de todos los elementos.
 numeros = []
 
 def calcular_producto(lista):
-    producto = 1  # Inicializamos el producto en 1
+    producto = 1 
     
     for numero in lista:
         producto *= numero
     
     return producto
-
-
 
 # Menú de opciones
 while True:
